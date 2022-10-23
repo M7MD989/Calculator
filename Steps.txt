@@ -1,8 +1,0 @@
-1- setup all our files 
-2- setup body element in css
-3- setup a div for the background of the calcu and give it properties through tailwind
-4- set a div on top of our background and set it size
-5- set a div and justify its content to end
-6- set a div for the output
-7- set two divs in the output div one for the previous number and the other for the current number
-8-
