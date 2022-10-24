@@ -2,7 +2,7 @@ const bodyClass = "bg-purple-800 bg-gradient-to-br from-blue-300 bg-opacity-25";
 const bdy = document.querySelector("body");
 bodyClass.split(" ").forEach(cls => bdy.classList.add(cls));
 
-const calcBodyClass = "max-w-lg rounded overflow-hidden shadow-2xl bg-purple-600 bg-opacity-75 bg-gradient-to-tr from-gray-500 flex";
+const calcBodyClass = "max-w-lg rounded overflow-hidden shadow-2xl bg-purple-600 bg-opacity-75 flex border border-black";//bg-gradient-to-tr from-rose-500
 const calcBody = document.querySelector(".calcBody");
 calcBodyClass.split(" ").forEach(cls => calcBody.classList.add(cls));
 
@@ -25,8 +25,10 @@ buttons.forEach((btn) => {
 
 function addClasses(button){
     const btnNumberClass = 'hover:bg-green-500 border-green-500';
-    const btnClearClass = 'hover:bg-red-500 border-red-500';
+    const btnClearClass = 'hover:bg-rose-700 border-rose-700';
     const btnOpClass = 'hover:bg-blue-500 border-blue-500';
+    const btnEqualClass = 'hover:bg-rose-700 border-rose-700';
+    const btnDecimalClass = 'hover:bg-rose-700 border-rose-700';
 
     if(button.classList.value === 'number'){
         btnNumberClass.split(' ').forEach(cls => button.classList.add(cls));
@@ -34,6 +36,10 @@ function addClasses(button){
         btnOpClass.split(' ').forEach(cls => button.classList.add(cls));
     }else if(button.classList.value === 'clear'){
         btnClearClass.split(' ').forEach(cls => button.classList.add(cls));
+    }else if(button.classList.value === 'equal'){
+        btnEqualClass.split(' ').forEach(cls => button.classList.add(cls));
+    }else if(button.classList.value === 'decimal'){
+        btnDecimalClass.split(' ').forEach(cls => button.classList.add(cls));
     }
     const baseClass = 'number flex w-12 h-12 justify-center items-center m-1 font-bold py-2 px-2 border hover:border-transparent rounded text-white border-2 text-2xl';
     baseClass.split(' ').forEach(cls => button.classList.add(cls));

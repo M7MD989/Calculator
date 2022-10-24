@@ -6,3 +6,20 @@
 6- set a div for the output
 7- set two divs in the output div one for the previous number and the other for the current number
 8-
+
+
+
+
+
+
+
+
+
+
+
+
+################
+JavaScript Part:
+
+1- first setup some global vriables and grab som DOM elements to modefy them
+2- create an eventlisenter to keys to do operations
